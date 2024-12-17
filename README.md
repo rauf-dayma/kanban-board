@@ -65,5 +65,5 @@ Start the Development Server
 
 ```bash
 
-npm run dev start 
+npm run dev 
 ``` 
