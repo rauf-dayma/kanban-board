@@ -48,28 +48,6 @@ Ensure you have the following installed on your system:
 ### ⚙️ Installation  
 
 1. **Clone the Repository**  
-   ```bash  
-   git clone https://github.com/<your-username>/kanban-board.git  
-   cd kanban-board  
-
-
----
-
-## 🚀 Getting Started  
-
-Follow these steps to set up and run the Kanban Board application on your local machine.  
-
-### Prerequisites  
-
-Ensure you have the following installed on your system:  
-- [Node.js](https://nodejs.org/) (version 16 or later)  
-- npm (Node Package Manager)  
-
----
-
-### ⚙️ Installation  
-
-1. **Clone the Repository**  
 
    ```bash  
    git clone https://github.com/rauf-dayma/kanban-board.git
