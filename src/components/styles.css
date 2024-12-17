@@ -1,0 +1,196 @@
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .kanban-board {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .kanban-columns {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+    }
+    
+    .column {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        padding: 10px;
+        min-height: 300px;
+    }
+    
+    .column-over {
+        background-color: #e6f7ff;
+    }
+    
+    .column-title {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .column-empty {
+        text-align: center;
+        color: #aaa;
+    }
+    
+    .task-card {
+        background-color: #edf3ff;
+        border: 1px solid #2c2828;
+        border-radius: 5px;
+        margin: 5px 0;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .task-card-dragging {
+        opacity: 0.5;
+    }
+    
+    .task-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .task-description {
+        font-size: 14px;
+        color: #555;
+    }
+    
+    /* SearchBar Styles */
+    .search-bar {
+        margin-bottom: 20px;
+    }
+    
+    .search-input {
+        padding: 10px;
+        width: 95%;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    
+    /* Task Form Styles */
+    .add-task-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+    
+    .task-form {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 8px;
+    }
+    
+    .task-title-input,
+    .task-description-input {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        width: 90%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .submit-task-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* General layout */
+    .app-container {
+        font-family: Arial, sans-serif;
+    }
+    
+    .app-header {
+        padding: 20px;
+        text-align: center;
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    .app-title {
+        margin: 0;
+    }
+    
+    .app-main {
+        padding: 20px;
+    }
+    
+    /* Responsive Styles */
+@media (max-width: 768px) {
+    .kanban-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .search-input {
+        max-width: 100%;
+    }
+
+    .task-form {
+        width: 95%;
+    }
+
+    .add-task-button {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .app-header {
+        padding: 15px;
+    }
+
+    .app-title {
+        font-size: 22px;
+    }
+
+    .task-form {
+        width: 70%;
+        bottom: 70px;
+    }
+
+    .add-task-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
